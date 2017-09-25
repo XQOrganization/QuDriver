@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4641453A40BCBF12ADF13837 /* libPods-QuDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE7757B0E8809C7FF56AA2B /* libPods-QuDriver.a */; };
 		A5F495901F78D9F20099FBF8 /* QuHudHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F4958F1F78D9F20099FBF8 /* QuHudHelper.m */; };
+		A5F495921F78E4260099FBF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F495911F78E4260099FBF8 /* Main.storyboard */; };
+		A5F495951F78E4540099FBF8 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F495941F78E4540099FBF8 /* MainTableViewController.m */; };
 		BAB4651F1F7249C600F7DBCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB4651E1F7249C600F7DBCD /* main.m */; };
 		BAB465221F7249C600F7DBCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB465211F7249C600F7DBCD /* AppDelegate.m */; };
 		BAB4652A1F7249C600F7DBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB465291F7249C600F7DBCD /* Assets.xcassets */; };
@@ -66,6 +68,9 @@
 /* Begin PBXFileReference section */
 		A5F4958E1F78D9F20099FBF8 /* QuHudHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuHudHelper.h; sourceTree = "<group>"; };
 		A5F4958F1F78D9F20099FBF8 /* QuHudHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuHudHelper.m; sourceTree = "<group>"; };
+		A5F495911F78E4260099FBF8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A5F495931F78E4540099FBF8 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		A5F495941F78E4540099FBF8 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		A8CEA8B2725A0A86C3420D5A /* Pods-QuDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuDriver.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuDriver/Pods-QuDriver.release.xcconfig"; sourceTree = "<group>"; };
 		BAB4651A1F7249C600F7DBCD /* QuDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB4651E1F7249C600F7DBCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -274,6 +279,9 @@
 				BAB466371F73529000F7DBCD /* MainViewController.h */,
 				BAB466381F73529000F7DBCD /* MainViewController.m */,
 				BAB466391F73529000F7DBCD /* MainViewController.xib */,
+				A5F495931F78E4540099FBF8 /* MainTableViewController.h */,
+				A5F495941F78E4540099FBF8 /* MainTableViewController.m */,
+				A5F495911F78E4260099FBF8 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -549,6 +557,7 @@
 				BAB466221F73465200F7DBCD /* LoginViewController.xib in Resources */,
 				BAB4663B1F73529000F7DBCD /* MainViewController.xib in Resources */,
 				BAB4652A1F7249C600F7DBCD /* Assets.xcassets in Resources */,
+				A5F495921F78E4260099FBF8 /* Main.storyboard in Resources */,
 				BAB465591F724FA700F7DBCD /* Resource.xcassets in Resources */,
 				BAB465F81F72644700F7DBCD /* README.txt in Resources */,
 			);
@@ -634,6 +643,7 @@
 				BAB465FB1F72644700F7DBCD /* CAAnimation+WAnimation.m in Sources */,
 				A5F495901F78D9F20099FBF8 /* QuHudHelper.m in Sources */,
 				BAB465FD1F72644700F7DBCD /* UITextView+YLTextView.m in Sources */,
+				A5F495951F78E4540099FBF8 /* MainTableViewController.m in Sources */,
 				BAB466051F72644700F7DBCD /* UITableView+FooterBlank.m in Sources */,
 				BAB465DE1F72644700F7DBCD /* LocalDataModel.m in Sources */,
 				BAB465E21F72644700F7DBCD /* PublicManager.m in Sources */,

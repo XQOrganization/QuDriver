@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-
+#import "MainTableViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -25,9 +25,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // //测试一哈
     //首页
-    BaseNavigationController *mainVC = [MainViewController navigationControllerContainSelf];
+    MainTableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainTableViewController"];
+//    BaseNavigationController *mainNav =[[BaseNavigationController alloc]initWithRootViewController:vc];
+//    BaseNavigationController *mainVC = [MainViewController navigationControllerContainSelf];
     
-    self.window.rootViewController = mainVC;
+    self.window.rootViewController = vc;
    
     //调用以下方法使self.window成为当前Application的主window和keywindow
     [self.window makeKeyAndVisible];
