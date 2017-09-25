@@ -41,6 +41,7 @@
 #import "LocalDataModel.h"
 #import "CHAlertView.h"
 #import "MBHudHelper.h"
+#import "QuHudHelper.h"
 #import "BaseNavigationController.h"
 #import "NetWorkRequestModel.h"
 #import "LoginViewController.h"

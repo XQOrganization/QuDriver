@@ -87,6 +87,25 @@
     }
     
 }
+- (void)setLeftBarItemWithButton:(UIButton *)btn
+{
+    
+    [btn addTarget:self action:@selector(leftBarButtonItemAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    [self.navigationItem setLeftBarButtonItem:item];
+    
+    
+}
+
+- (void)setRightBarItemWithButton:(UIButton *)btn
+{
+    
+    [btn addTarget:self action:@selector(rightBarButtonItemAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    [self.navigationItem setRightBarButtonItem:item];
+    
+    
+}
 
 - (void)leftBarButtonItemAction:(id)sender{}
 

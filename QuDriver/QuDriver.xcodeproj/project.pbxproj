@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4641453A40BCBF12ADF13837 /* libPods-QuDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE7757B0E8809C7FF56AA2B /* libPods-QuDriver.a */; };
+		A5F495901F78D9F20099FBF8 /* QuHudHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F4958F1F78D9F20099FBF8 /* QuHudHelper.m */; };
 		BAB4651F1F7249C600F7DBCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB4651E1F7249C600F7DBCD /* main.m */; };
 		BAB465221F7249C600F7DBCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB465211F7249C600F7DBCD /* AppDelegate.m */; };
 		BAB4652A1F7249C600F7DBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB465291F7249C600F7DBCD /* Assets.xcassets */; };
@@ -63,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5F4958E1F78D9F20099FBF8 /* QuHudHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuHudHelper.h; sourceTree = "<group>"; };
+		A5F4958F1F78D9F20099FBF8 /* QuHudHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuHudHelper.m; sourceTree = "<group>"; };
 		A8CEA8B2725A0A86C3420D5A /* Pods-QuDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuDriver.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuDriver/Pods-QuDriver.release.xcconfig"; sourceTree = "<group>"; };
 		BAB4651A1F7249C600F7DBCD /* QuDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB4651E1F7249C600F7DBCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -301,6 +304,8 @@
 				BAB465761F72644700F7DBCD /* LocalDataModel.h */,
 				BAB465771F72644700F7DBCD /* LocalDataModel.m */,
 				BAB465781F72644700F7DBCD /* MBHudHelper.h */,
+				A5F4958E1F78D9F20099FBF8 /* QuHudHelper.h */,
+				A5F4958F1F78D9F20099FBF8 /* QuHudHelper.m */,
 				BAB465791F72644700F7DBCD /* MBHudHelper.m */,
 				BAB4657E1F72644700F7DBCD /* PublicManager.h */,
 				BAB4657F1F72644700F7DBCD /* PublicManager.m */,
@@ -558,9 +563,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuDriver/Pods-QuDriver-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -573,13 +583,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuDriver-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C503C12FA9FAF94DC0F05394 /* [CP] Embed Pods Frameworks */ = {
@@ -619,6 +632,7 @@
 				BAB465E71F72644700F7DBCD /* SDCollectionViewCell.m in Sources */,
 				BAB465EF1F72644700F7DBCD /* ThirdPayManager.m in Sources */,
 				BAB465FB1F72644700F7DBCD /* CAAnimation+WAnimation.m in Sources */,
+				A5F495901F78D9F20099FBF8 /* QuHudHelper.m in Sources */,
 				BAB465FD1F72644700F7DBCD /* UITextView+YLTextView.m in Sources */,
 				BAB466051F72644700F7DBCD /* UITableView+FooterBlank.m in Sources */,
 				BAB465DE1F72644700F7DBCD /* LocalDataModel.m in Sources */,

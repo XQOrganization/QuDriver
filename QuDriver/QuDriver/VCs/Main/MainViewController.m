@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-
+#import "LoginViewController.h"
 @interface MainViewController ()
 
 @end
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+- (IBAction)loginBtnClick:(id)sender {
+    BaseNavigationController *nav = [LoginViewController navigationControllerContainSelf ];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
